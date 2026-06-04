@@ -124,14 +124,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DecorFish.cpp" />
     <ClCompile Include="FishUtil.cpp" />
-    <ClCompile Include="hello.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Lake.cpp" />
+    <ClCompile Include="ProcessObj.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteObj.cpp" />
+    <ClCompile Include="ProcessObjRegistry.cpp" />
     <ClCompile Include="TwoDSideDraw.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DecorFish.h" />
     <ClInclude Include="FishUtil.h" />
     <ClInclude Include="Lake.h" />
+    <ClInclude Include="ProcessObj.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteObj.h" />
+    <ClInclude Include="ProcessObjRegistry.h" />
     <ClInclude Include="TwoDSideDraw.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

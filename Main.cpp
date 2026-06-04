@@ -3,21 +3,17 @@
 #include <chrono>
 #include <array>
 #include "TwoDSideDraw.h"
+#include "ProcessObjRegistry.h"
 #include "Lake.h"
+#include "FishUtil.h"
 using namespace std;
 using namespace std::chrono;
 
 // Util for time of previous frame to compute if a new frame should be drawn
-int last_frame_ms = 0;
-// Tracks the current frame number (used for animations that step per frame)
-int current_frame = 0;
+long long last_frame_ms = 0;
 
 // Time between frames (1000 / FPS)
 int ms_per_frame = 1000 / 60;
-
-// Line Length
-const int line_length = 120;
-const int num_lines = 30;
 
 // Prototype the functions so the compiler knows about it when it gets to main
 static void draw_frame();
@@ -45,7 +41,7 @@ static void setup() {
 // Draws a new frame every ms_per_frame at most.
 static void draw_frame() {
 	// Compute current system time
-	int current_ms = duration_cast<milliseconds>(
+	long long current_ms = duration_cast<milliseconds>(
 		system_clock::now().time_since_epoch()
 	)
 		.count();
@@ -55,14 +51,14 @@ static void draw_frame() {
 		// Update last frame ms.
 		last_frame_ms = current_ms;
 		// And frame count for functions
-		current_frame += 1;
+		FishUtil::frame_num += 1;
 
 		// Create new empty frame data to be drawn to.
 		std::array<string, 30> frame_data;
-		frame_data.fill(std::string(120, ' ')); // populate with empty strings of length 120
+		frame_data.fill(std::string(FishUtil::LINE_LENGTH, ' ')); // populate with empty strings of length 120
 
 		// Define rendered water height. Eventually this will depend on camera, so for now we just hardcode.
-		int water_height = 20;
+		FishUtil::water_height = 20;
 
 		/*
 			MAIN LOGIC PER FRAME [PHYSICS --> DRAW]
@@ -72,9 +68,7 @@ static void draw_frame() {
 		/*
 		---------------------------------------- PHYSICS LOGIC START ----------------------------------------
 		*/
-		// Update fish positions etc. in the lake
-		Lake::step_lake(water_height, num_lines);
-
+		ProcessObjRegistry::update_all();
 		/*
 		---------------------------------------- PHYSICS LOGIC START ----------------------------------------
 		*/
@@ -84,8 +78,8 @@ static void draw_frame() {
 		*/ 
 
 		// TWO-D Mode
-		TwoDSideDraw::drawWaves(water_height, current_frame / 4, line_length, frame_data);
-		TwoDSideDraw::drawFish(Lake::decorative_fish, line_length, frame_data);
+		ProcessObjRegistry::draw_all(frame_data);
+		TwoDSideDraw::drawWaves(FishUtil::water_height, FishUtil::frame_num / 4, FishUtil::LINE_LENGTH, frame_data);
 
 		/*
 		---------------------------------------- DRAW LOGIC END ----------------------------------------

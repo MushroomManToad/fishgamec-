@@ -13,12 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\objects">
+      <UniqueIdentifier>{95884b66-fd0f-47a5-bd22-c0274ae6ffc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render">
+      <UniqueIdentifier>{ab070300-123c-4cfc-868c-be993c426ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\objects">
+      <UniqueIdentifier>{42bf7018-165c-4d89-9932-3d71d77ed00d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\render">
+      <UniqueIdentifier>{a3357bcb-dcb0-4e08-9e97-e916e90c94ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\objects\generic">
+      <UniqueIdentifier>{5f211d67-fd46-4869-95b8-3547f768bc80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objects\generic">
+      <UniqueIdentifier>{6812204b-3ec6-4bba-a39f-21ae8e5a22ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objects\decor">
+      <UniqueIdentifier>{ad23b972-52b0-48be-b4aa-474f9d3e8639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\objects\decor">
+      <UniqueIdentifier>{2707e9a1-0b80-4faa-9ec8-67753fd3a3ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TwoDSideDraw.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Lake.cpp">
@@ -27,16 +48,49 @@
     <ClCompile Include="FishUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TwoDSideDraw.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessObjRegistry.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessObj.cpp">
+      <Filter>Source Files\objects\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteObj.cpp">
+      <Filter>Source Files\objects\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="DecorFish.cpp">
+      <Filter>Source Files\objects\decor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TwoDSideDraw.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Lake.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FishUtil.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessObjRegistry.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="TwoDSideDraw.h">
+      <Filter>Header Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteObj.h">
+      <Filter>Header Files\objects\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessObj.h">
+      <Filter>Header Files\objects\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="DecorFish.h">
+      <Filter>Header Files\objects\decor</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

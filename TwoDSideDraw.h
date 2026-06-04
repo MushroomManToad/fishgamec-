@@ -9,6 +9,5 @@ class TwoDSideDraw
 {
 public:
 	static void drawWaves(int water_height, int frame, int line_length, std::array<std::string, 30>& frame_data);
-	static void drawFish(std::vector<Lake::decorFish>, int line_length, std::array<std::string, 30>& frame_data);
 };
 

@@ -1,25 +1,15 @@
-﻿  FishUtil.cpp
-  Lake.cpp
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(26,71): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(26,71): warning C4267:         with
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(26,71): warning C4267:         [
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(26,71): warning C4267:             _Ty=int
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(26,71): warning C4267:         ]
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(29,61): warning C4305: 'argument': truncation from 'double' to '_Ty'
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(29,61): warning C4305:         with
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(29,61): warning C4305:         [
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(29,61): warning C4305:             _Ty=float
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(29,61): warning C4305:         ]
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(64,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(80,29): warning C4244: '=': conversion from 'int' to '_Ty', possible loss of data
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(80,29): warning C4244:         with
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(80,29): warning C4244:         [
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(80,29): warning C4244:             _Ty=float
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(80,29): warning C4244:         ]
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(85,27): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(85,27): warning C4244:         with
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(85,27): warning C4244:         [
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(85,27): warning C4244:             _Ty=float
-D:\Unity\CPlusPractice\CPlusPractice\Lake.cpp(85,27): warning C4244:         ]
-  Generating Code...
+﻿  DecorFish.cpp
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(19,71): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(19,71): warning C4267:         with
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(19,71): warning C4267:         [
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(19,71): warning C4267:             _Ty=int
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(19,71): warning C4267:         ]
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(22,61): warning C4305: 'argument': truncation from 'double' to '_Ty'
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(22,61): warning C4305:         with
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(22,61): warning C4305:         [
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(22,61): warning C4305:             _Ty=float
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(22,61): warning C4305:         ]
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(29,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(45,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Unity\CPlusPractice\CPlusPractice\DecorFish.cpp(51,35): warning C4305: '=': truncation from 'double' to 'float'
   CPlusPractice.vcxproj -> D:\Unity\CPlusPractice\x64\Debug\CPlusPractice.exe
